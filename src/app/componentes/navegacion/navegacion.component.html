@@ -1,0 +1,55 @@
+<div id="barra-superior" class="row">
+  <div id="cont-barra-superior" class="col s10 m6 l4 offset-l8 offset-s2 offset-m6">
+    <p>Siguenos en nuestras redes sociales</p>
+    <a href=""><img src="../../../imagenes/icono-facebook.png" alt=""></a>
+  </div>
+</div>
+
+<div id="barra-principal" class="row">
+  <div id="imagen-logo" class="col l1 m2 s6 offset-s4 offset-m4">
+    <a routerLink=""><img src="../../../imagenes/logo-navbar.jpg" alt="no se a podido cargar la imagen"></a>
+  </div>
+
+  <div class="hide-on-med-and-down col l4 m4 offset-l4 offset-m4" id="menu_principal">
+    <ul id="lista">
+      <li style="margin:10px" class="menu">
+          <a routerLink="">Inicio</a>
+      </li>
+      <li style="margin:10px" class="menu"><a routerLink="/productos">Productos</a>
+        <ul class="submenu">
+          <li><a routerLink="productos/metalicaDama">MetalicaDama</a></li>
+          <li><a routerLink="productos/metalicaHombre">MetalicaHombre</a></li>
+          <li><a routerLink="productos/acetatoDama">AcetatoDama</a></li>
+          <li><a routerLink="productos/acetatoHombre">AcetatoHombre</a></li>
+          <li><a routerLink="productos/promocionDama">PromocionDama</a></li>
+          <li><a routerLink="productos/promocionHombre">PromocionHombre</a></li>
+          <li><a routerLink="productos/economicaDama">EconomicaDama</a></li>
+          <li><a routerLink="productos/ninos">Niños</a></li>
+        </ul>
+      </li>
+      <li style="margin:10px" class="menu"><a routerLink="servicios">Servicios</a></li>
+    </ul>
+  </div>
+  <!--menu para dispositivos moviles-->
+  <div class="hide-on-large-only">
+    <i class="material-icons sidenav-trigger" id="boton-sidenav" data-target="slide-out">menu</i>
+  </div>
+  <ul id="slide-out" class="sidenav">
+    <li style="margin:10px">
+      <a routerLink="">Inicio</a>
+    </li>
+    <li style="margin:10px" class="menu-small"><a>Productos</a>
+      <ul class="submenu">
+        <li><a routerLink="productos/metalicaDama">MetalicaDama</a></li>
+        <li><a routerLink="productos/metalicaHombre">MetalicaHombre</a></li>
+        <li><a routerLink="productos/acetatoDama">AcetatoDama</a></li>
+        <li><a routerLink="productos/acetatoHombre">AcetatoHombre</a></li>
+        <li><a routerLink="productos/promocionDama">PromocionDama</a></li>
+        <li><a routerLink="productos/promocionHombre">PromocionHombre</a></li>
+        <li><a routerLink="productos/economicaDama">EconomicaDama</a></li>
+        <li><a routerLink="productos/ninos">Niños</a></li>
+      </ul>
+    </li>
+    <li style="margin:10px" class="menu-small"><a routerLink="servicios">Servicios</a></li>
+  </ul>
+</div>

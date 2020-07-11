@@ -1,0 +1,19 @@
+footer{
+  text-align: center;
+  color: white;
+  opacity: 0.9;
+  position: static;
+  bottom: 0px;
+  vertical-align: bottom;
+  width: 100%;
+  padding: 15px;
+}
+footer h5{
+    text-transform: capitalize;
+}
+.parrafo{
+  text-align: justify;
+}
+.cuerpo-principal{
+  width: 90%;
+}
