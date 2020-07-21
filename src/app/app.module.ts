@@ -21,6 +21,9 @@ import { MetalicaDamaComponent } from './componentes/metalica-dama/metalica-dama
 import { EconomicaDamaComponent } from './componentes/economica-dama/economica-dama.component';
 import { NiñosComponent } from './componentes/niños/niños.component';
 import { ModalComponent } from './componentes/modal/modal.component';
+import { DamasComponent } from './damas/damas.component';
+import { HombresComponent } from './hombres/hombres.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { ModalComponent } from './componentes/modal/modal.component';
     MetalicaDamaComponent,
     EconomicaDamaComponent,
     NiñosComponent,
-    ModalComponent
+    ModalComponent,
+    DamasComponent,
+    HombresComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

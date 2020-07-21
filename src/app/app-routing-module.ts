@@ -10,7 +10,9 @@ import { EconomicaDamaComponent } from './componentes/economica-dama/economica-d
 import { PromoDamaComponent } from './componentes/promo-dama/promo-dama.component';
 import { PromoHombreComponent } from './componentes/promo-hombre/promo-hombre.component';
 import { NiñosComponent } from './componentes/niños/niños.component';
-import { ServiciosComponent } from './componentes/servicios/servicios.component'
+import { ServiciosComponent } from './componentes/servicios/servicios.component';
+import { DamasComponent } from './damas/damas.component';
+import { HombresComponent } from './hombres/hombres.component';
 const routes: Routes = [
   {path: '', component: PrincipalComponent},
   {path: 'productos', component: ProductosComponent},
@@ -22,7 +24,17 @@ const routes: Routes = [
   {path: 'productos/promocionHombre', component: PromoHombreComponent},
   {path: 'productos/economicaDama', component: EconomicaDamaComponent},
   {path: 'productos/ninos', component: NiñosComponent},
-  {path: 'servicios', component: ServiciosComponent}
+  {path: 'servicios', component: ServiciosComponent},
+  {path: 'damas', component: DamasComponent},
+  {path: 'hombres', component: HombresComponent},
+
+  {path: 'metalicaDama', component: MetalicaDamaComponent},
+  {path: 'metalicaHombre', component: MetalicaHombreComponent},
+  {path: 'acetatoDama', component: AcetatoDamaComponent},
+  {path: 'acetatoHombre', component: AcetatoHombreComponent},
+  {path: 'promocionDama', component: PromoDamaComponent},
+  {path: 'promocionHombre', component: PromoHombreComponent},
+  {path: 'economicaDama', component: EconomicaDamaComponent}
 
 
 ];

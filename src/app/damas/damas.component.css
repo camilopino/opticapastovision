@@ -1,0 +1,110 @@
+.banner-mujer{ 
+    position: relative;
+    margin-top: 20px;
+    width: 90%;
+    height: 300px;
+}
+
+.imagen{
+    position: absolute;
+    border:1px solid black;
+    width: 100%;
+    height: 100%;
+}
+.imagen img{
+    
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 100%;
+
+}
+.recuadro{
+    position: relative;
+    background: black;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0.2;
+}
+
+.marco{
+    position: relative;
+    border:1px solid black;
+    padding: 0%;
+    width: 100%;
+    height: 400px;
+}
+.marco img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#metalicos{
+    position: absolute;
+    background:black;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0%;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .3s;
+}
+#metalicos:hover{
+    opacity: 0.7;
+}
+#metalicos h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:white;
+    margin-top: 25%;
+}
+
+#acetato{
+    position: absolute;
+    background:rgb(26, 66, 36);
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0%;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .3s;
+}
+#acetato:hover{
+    opacity: 0.7;
+}
+#acetato h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:white;
+    margin-top: 25%;
+}
+
+#economicos{
+    position: absolute;
+    background:white;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0%;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .3s;
+}
+#economicos:hover{
+    opacity: 0.7;
+}
+#economicos h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:black;
+    margin-top: 25%;
+}

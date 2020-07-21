@@ -37,7 +37,7 @@ export class ServiciosComponent implements OnInit {
       },1500)
 
     }
-    if(scroll>=500){
+    if(scroll>=600){
       $("#servicio3").animate({
         left:"0"
       },1500)

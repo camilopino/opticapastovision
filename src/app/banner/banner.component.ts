@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 declare var $:any;
-declare var M:any;
-
 @Component({
-  selector: 'app-principal',
-  templateUrl: './principal.component.html',
-  styleUrls: ['./principal.component.css']
+  selector: 'app-banner',
+  templateUrl: './banner.component.html',
+  styleUrls: ['./banner.component.css']
 })
-export class PrincipalComponent implements OnInit {
-  
-
+export class BannerComponent implements OnInit {
+  i=0
   constructor() { }
-  i=0;
+
   ngOnInit() {
     this.cambioImagen()
   }
@@ -101,8 +98,4 @@ export class PrincipalComponent implements OnInit {
       }
     })
   }
-
-
-  }
-
-
+}
