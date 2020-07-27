@@ -1,10 +1,18 @@
-<div id="modal" (click)="ocultar_modal()">
-  <div id="contenedor-imagenes">
-    <div id="boton"><button class="btn btn-effect green darken-3" (click)="ocultar_modal()">X</button></div>
-    <div class="carousel" id="ventana">
-      <a class="carousel-item"><img src=""></a>
-      <a class="carousel-item"><img src=""></a>
-      <a class="carousel-item"><img src=""></a>
+<div class="contenedor-modal">
+  <div class="recuadro-grande" (click)="cerrar()"></div>
+  <div class="recuadro-pequeño">
+    <div class="cerrar">
+      <button class="btn green darken-1 boton" (click)="cerrar()">x</button>
     </div>
+    <img src="" alt="">
+    <div class="flechas">
+      <div class="izquierda">
+        <i class="material-icons">chevron_left</i>
+      </div>
+      <div class="derecha">
+        <i class="material-icons">chevron_right</i>
+      </div>
+    </div>
+
   </div>
 </div>

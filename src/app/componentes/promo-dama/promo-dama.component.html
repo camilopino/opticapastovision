@@ -1,28 +1,19 @@
+<app-modal></app-modal>
 <div class="container">
   <div class="row">
-    <div class="col s12 m6 l4" *ngFor="let imagenes of arreglo">
-      <div class="card" (click)="aparecer_recuadro(this.src1.src, this.src2.src, this.src3.src)">
+    <div class="col s12 m6 l4" *ngFor="let imagenes of arreglo" (click)="abrir(this.src1.src, this.src2.src, this.src3.src)">
+      <div class="card">
       <div class="imagen-principal">
         <img #src1 src="{{imagenes[0]}}" alt="No se ha podido cargar la imagen">
       </div>
       <div class="imagen-oculta">
-        <img #src2 src="{{imagenes[1]}}" alt="No se ha podido cargar la imagen">
-        <img #src3 src="{{imagenes[2]}}" alt="No se ha podido cargar la imagen">
+        <img #src1 src="{{imagenes[1]}}" alt="No se ha podido cargar la imagen">
+        <img #src2 src="{{imagenes[2]}}" alt="No se ha podido cargar la imagen">
+        <img #src3 src="{{imagenes[3]}}" alt="No se ha podido cargar la imagen">
       </div>
     </div>
   </div>
   </div>
 </div>
 
-<div id="modal">
-  <div id="contenedor-imagenes"> 
-    <div id="boton"><button class="btn btn-effect green darken-3" (click)="ocultar_modal()">X</button></div>
-    <div class="carousel" id="ventanaED">
-      <a class="carousel-item"><img src=""></a>
-      <a class="carousel-item"><img src=""></a>
-      <a class="carousel-item"><img src=""></a>
-    </div>
-
-  </div>
-</div>
 

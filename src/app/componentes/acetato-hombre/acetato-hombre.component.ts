@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalserviceService } from '../../modalservice.service'
 declare var $:any;
 declare var M:any;
 
@@ -10,7 +11,7 @@ declare var M:any;
 export class AcetatoHombreComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private modalservice:ModalserviceService) { }
  arreglo
   ngOnInit() { 
     this.arreglo=JSON.parse(localStorage.getItem("ACH"))
@@ -26,21 +27,10 @@ export class AcetatoHombreComponent implements OnInit {
     
   }
 
-  aparecer_recuadro(imagen_principal,imagenSecundaria,imagenTerciaria){
-    
-    $("#modal").show(300)
-      $("#ventanaED a:first-child").find("img").attr("src",imagen_principal)
-      $("#ventanaED  a:nth-child(2)").find("img").attr("src",imagenSecundaria)
-      $("#ventanaED  a:nth-child(3)").find("img").attr("src",imagenTerciaria)
+  
+  abrir(imagen1, imagen2, imagen3){
+    this.modalservice.aparicionModal(imagen1,imagen2,imagen3)
+  }
 
-    var elem = document.querySelector('#ventanaED');
-    var instance = M.Carousel.init(elem,{
-      indicators:true
-    });  
-}
-
-ocultar_modal(){
-$("#modal").hide()
-}
 
 }

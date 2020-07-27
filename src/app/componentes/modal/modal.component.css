@@ -1,42 +1,103 @@
-#modal{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../../../imagenes/textura-teal.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
- }
- #contenedor-imagenes{
-    width: 80vw;
-    height: 75vh;
-    display:block;
-    margin: auto;
-    margin-top: 10%;
-    opacity: 0.95;
-    border-radius: 15px;
+ 
+.recuadro-grande{
+   display: none;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   background: black;
+   opacity: 0.4;
+   z-index: 1000;
+}
+.recuadro-pequeño{
+   display: none;
+   position: fixed;
+   top:0;
+   width: 80vw;
+   height: 80vh;
+   margin: 10vh 10vw 10vh 10vw;
+   border-radius: 10px;
+   border: 2px solid black;
+   z-index: 10000;
+}
+
+img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   border-radius: 10px;
+   top:0;
+}
+.cerrar{
+   position: relative;
+   width: 100%;
+   height: 40px;
+   border-radius: 10px;
+   padding: 0%;
+}
+.boton{
+   position: absolute;
+   right: 0;
+   height: 100%;
+   border-radius: 10px;
+   z-index: 1;
+}
+
+.flechas{
+   margin-top: 25%;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   margin-right: 5px;
+   margin-left: 5px;
+   transition: 0.3s;
  }
  
- #boton{
-    width: 100%;
-    background-color: white;
-    opacity: 0.75;
+ .derecha{
+   border-radius: 5px;
+   padding: 8px;
+   background-color: grey;
+   color:white;
+   opacity: 0.3;
+ 
  }
- 
- #contenedor-imagenes #ventana{
-    width: 100%;
-    height: 100%;
+ .izquierda{
+   border-radius: 5px;
+   padding: 8px;
+   background-color: grey;
+   color:white;
+   opacity: 0.3;
  }
- 
- #contenedor-imagenes #ventana a{
-    width: 100%;
-    height: 100%;
+ .derecha:hover{
+   cursor: pointer;
+   opacity: 0.7;
  }
- #contenedor-imagenes #ventana a img{
-    width: 100%;
-    height: 100%;
- } 
+ .izquierda:hover{
+   cursor: pointer;
+   opacity: 0.7;
+ }
+ @media(max-width:1080){
  
- 
+      .flechas{
+         margin-top: 15%;
+         position: relative;
+         display: flex;
+         justify-content: space-between;
+         margin-right: 5px;
+         margin-left: 5px;
+         transition: 0.3s;
+       }
+    
+ }
+
+ @media(max-width:750){
+   .flechas{
+      margin-top: 15%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 5px;
+      margin-left: 5px;
+      transition: 0.3s;
+    }
+ }

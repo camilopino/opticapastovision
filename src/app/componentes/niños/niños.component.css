@@ -5,7 +5,8 @@ img{
     display: none;
  }
  
- /*Inicio del modal*/
+ 
+ /*Inicio del modal
  #modal{
    width: 100vw;
    height: 100vh;
@@ -48,6 +49,6 @@ img{
    height: 100%;
 } 
  
- /*Fin del modal */
+ Fin del modal */
 
  

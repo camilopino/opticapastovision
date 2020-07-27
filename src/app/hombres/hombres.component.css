@@ -5,13 +5,13 @@
     height: 300px;
 }
 
-.imagen{
+.imagen-hombre{
     position: absolute;
     border:1px solid black;
     width: 100%;
     height: 100%;
 }
-.imagen img{
+.imagen-hombre img{
     
     width: 100%;
     display: block;

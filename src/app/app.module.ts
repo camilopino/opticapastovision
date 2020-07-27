@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
-
+import { ModalserviceService } from './modalservice.service'
+ 
 import { AppComponent } from './app.component';
 import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
@@ -53,7 +53,7 @@ import { BannerComponent } from './banner/banner.component';
     HttpModule,
     L3RoutingModule
   ],
-  providers: [],
+  providers: [ModalserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
