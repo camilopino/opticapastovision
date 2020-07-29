@@ -46,7 +46,7 @@ export class PrincipalComponent implements OnInit {
            imagen=$(".imagen").find("img").attr("src",imagen1)
             console.log(imagen1)
         }
-      },5000) 
+      },8000) 
 
     $(".derecha").on("click",function(){
       if(i<3){
