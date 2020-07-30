@@ -34,7 +34,8 @@ const routes: Routes = [
   {path: 'acetatoHombre', component: AcetatoHombreComponent},
   {path: 'promocionDama', component: PromoDamaComponent},
   {path: 'promocionHombre', component: PromoHombreComponent},
-  {path: 'economicaDama', component: EconomicaDamaComponent}
+  {path: 'economicaDama', component: EconomicaDamaComponent},
+  {path: '**',component:PrincipalComponent}
 
 
 ];
